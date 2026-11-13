@@ -1,0 +1,26 @@
+rounds: 2
+member_delay: 0
+synthesizer_model: anthropic/claude-sonnet-4.6
+synthesizer_provider: openrouter
+
+members:
+  - id: nemotron_ultra
+    name: Nemotron Ultra 550B
+    role: propositor
+    provider: openrouter
+    model: nvidia/nemotron-3-ultra-550b-a55b:free
+    color: cyan
+
+  - id: nemotron_super
+    name: Nemotron Super 120B
+    role: critico
+    provider: openrouter
+    model: nvidia/nemotron-3-super-120b-a12b:free
+    color: green
+
+  - id: nemotron_nano
+    name: Nemotron Nano 30B
+    role: arbitro
+    provider: openrouter
+    model: nvidia/nemotron-3-nano-30b-a3b:free
+    color: yellow
